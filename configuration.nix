@@ -89,6 +89,7 @@
      gnupg
      pinentry
      discord
+     libreoffice
   ];
 
 programs.gnupg.agent = {
