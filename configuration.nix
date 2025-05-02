@@ -3,7 +3,7 @@
 {
   imports =
     [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
+      /etc/nixos/hardware-configuration.nix
     ];
 
   # Bootloader.
@@ -63,6 +63,8 @@
 
   };
 
+  nixpkgs.config.allowUnfree = true;
+
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
@@ -86,6 +88,7 @@
      neovim
      gnupg
      pinentry
+     discord
   ];
 
 programs.gnupg.agent = {
