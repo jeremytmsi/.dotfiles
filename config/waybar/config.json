@@ -11,5 +11,21 @@
 		"on-click": "waybar-mpris --send toggle",
 		"escape": true,
 		"format": "{icon} {}"
+	},
+
+	"network": {
+		"format-wifi": "  {essid} ({ipaddr}/{cidr})"
+	},
+
+	"wireplumber": {
+		"format": "  {volume}%"
+	},
+
+	"battery": {
+		"format": "  {capacity}%"
+	},
+
+	"clock": {
+		"format": "  {:%H:%M}"
 	}
 }

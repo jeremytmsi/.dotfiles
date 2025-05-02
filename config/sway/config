@@ -120,4 +120,6 @@ corner_radius 10
 
 focus_follows_mouse no
 
+exec waybar -c ~/.config/waybar/config.json &
+
 include /etc/sway/config.d/*
