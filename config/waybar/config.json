@@ -1,0 +1,15 @@
+{
+	"layer": "top",
+	"height": 35,
+	"modules-left": ["sway/workspaces"],
+	"modules-center": ["custom/waybar-mpris"],
+	"modules-right": ["wireplumber","network","battery","clock"],
+
+	"custom/waybar-mpris": {
+		"return-type": "json",
+		"exec": "waybar-mpris --play '' --pause '' --autofocus",
+		"on-click": "waybar-mpris --send toggle",
+		"escape": true,
+		"format": "{icon} {}"
+	}
+}

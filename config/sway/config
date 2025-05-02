@@ -118,4 +118,6 @@ gaps outer 10
 
 corner_radius 10
 
+focus_follows_mouse no
+
 include /etc/sway/config.d/*
