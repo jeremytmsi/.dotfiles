@@ -38,7 +38,8 @@
 
   # Enable the GNOME Desktop Environment.
   services.xserver.displayManager.gdm.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
+  services.xserver.desktopManager.gnome.enable = false;
+  services.displayManager.sessionPackages = with pkgs; [ sway ];
 
   # Configure keymap in X11
   services.xserver.xkb = {
@@ -90,7 +91,12 @@
      pinentry
      discord
      libreoffice
+     swayfx
+     rofi
+     kitty
   ];
+
+programs.sway.enable = true;
 
 programs.gnupg.agent = {
 	enable = true;
