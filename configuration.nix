@@ -14,7 +14,7 @@
   boot.plymouth.theme = "bgrt";
   boot.initrd.systemd.enable = true;
 
-  networking.hostName = "nixos"; # Define your hostname.
+  networking.hostName = "LeMans"; # Define your hostname.
 
   # Enable networking
   networking.networkmanager.enable = true;
