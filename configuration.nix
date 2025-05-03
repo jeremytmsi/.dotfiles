@@ -107,6 +107,7 @@
      waybar
      waybar-mpris
      unzip
+     thunderbird
   ];
 
 programs.sway.enable = true;
@@ -116,6 +117,8 @@ programs.gnupg.agent = {
 };
 
 programs.htop.enable = true;
+
+virtualisation.docker.enable = true;
 
   system.stateVersion = "24.11";
 
