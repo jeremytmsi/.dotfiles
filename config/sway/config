@@ -112,14 +112,16 @@ bindsym $mod+r mode "resize"
 
 default_border none
 
-smart_gaps on
-gaps inner 10
-gaps outer 10
+gaps inner 5
+gaps outer 5
 
 corner_radius 10
 
 focus_follows_mouse no
 
+blur enable
+
 exec waybar -c ~/.config/waybar/config.json &
+exec swaybg -i ~/.local/share/wallpaper/wallpaper.jpeg &
 
 include /etc/sway/config.d/*
