@@ -110,15 +110,17 @@
      thunderbird
   ];
 
-programs.sway.enable = true;
+  programs.sway.enable = true;
 
-programs.gnupg.agent = {
-	enable = true;
-};
+  programs.gnupg.agent = {
+	  enable = true;
+  };
 
-programs.htop.enable = true;
+  programs.htop.enable = true;
 
-virtualisation.docker.enable = true;
+  virtualisation.docker.enable = true;
+
+  services.tlp.enable = true;
 
   system.stateVersion = "24.11";
 
