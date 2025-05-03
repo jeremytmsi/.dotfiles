@@ -108,6 +108,8 @@
      waybar-mpris
      unzip
      thunderbird
+     nfs-utils
+     p7zip
   ];
 
   programs.sway.enable = true;
