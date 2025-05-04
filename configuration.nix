@@ -110,6 +110,7 @@
      nfs-utils
      p7zip
      swaybg
+     autotiling
   ];
 
   programs.sway.enable = true;
@@ -123,6 +124,8 @@
   virtualisation.docker.enable = true;
 
   services.tlp.enable = true;
+
+  programs.foot.enable = false;
 
   system.stateVersion = "24.11";
 

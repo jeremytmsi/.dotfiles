@@ -110,6 +110,10 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
+bindsym XF86AudioRaiseVolume exec wpctl set-volume --limit 1 @DEFAULT_AUDIO_SINK@ 5%+
+bindsym XF86AudioLowerVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
+bindsym XF86AudioMute exec wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
+
 default_border none
 
 gaps inner 5
@@ -123,5 +127,6 @@ blur enable
 
 exec waybar -c ~/.config/waybar/config.json &
 exec swaybg -i ~/.local/share/wallpaper/wallpaper.jpeg &
+exec autotiling &
 
 include /etc/sway/config.d/*
