@@ -87,9 +87,6 @@
     ];
   };
 
-  # Install firefox.
-  programs.firefox.enable = true;
-
   environment.systemPackages = with pkgs; [
      wget
      git
@@ -115,17 +112,19 @@
 
   programs.sway.enable = true;
 
+  programs.firefox.enable = true;
+
   programs.gnupg.agent = {
 	  enable = true;
   };
 
   programs.htop.enable = true;
 
+  programs.foot.enable = false;
+
   virtualisation.docker.enable = true;
 
   services.tlp.enable = true;
-
-  programs.foot.enable = false;
 
   hardware.bluetooth.enable = true;
   hardware.bluetooth.powerOnBoot = true;
