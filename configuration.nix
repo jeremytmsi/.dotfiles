@@ -90,8 +90,8 @@
   environment.systemPackages = with pkgs; [
      wget
      git
-     neovim
      gnupg
+     neovim
      pinentry
      discord
      libreoffice
@@ -108,6 +108,11 @@
      p7zip
      swaybg
      autotiling
+  ];
+
+  programs.nix-ld.enable = true;
+  programs.nix-ld.libraries = with pkgs; [
+    neovim
   ];
 
   programs.sway.enable = true;
