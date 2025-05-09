@@ -108,12 +108,15 @@
      p7zip
      swaybg
      autotiling
+     nodejs_23
   ];
 
   programs.nix-ld.enable = true;
   programs.nix-ld.libraries = with pkgs; [
     neovim
   ];
+
+  programs.neovim.withNodeJs = true;
 
   programs.sway.enable = true;
 
