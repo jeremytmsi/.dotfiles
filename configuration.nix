@@ -109,6 +109,8 @@
      swaybg
      autotiling
      nodejs_23
+     cargo
+     gcc
   ];
 
   programs.nix-ld.enable = true;

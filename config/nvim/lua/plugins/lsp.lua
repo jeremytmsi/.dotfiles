@@ -26,6 +26,8 @@ return {
 
       lspconfig.docker_compose_language_service.setup {}
 
+      lspconfig.nil_ls.setup {}
+
     end
   },
 
