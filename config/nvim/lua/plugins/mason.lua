@@ -10,6 +10,7 @@ return {
       ensure_installed = {
         "lua_ls",
         "docker_language_server",
+        "pylsp"
       }
     },
     dependencies = {"neovim/nvim-lspconfig"}
