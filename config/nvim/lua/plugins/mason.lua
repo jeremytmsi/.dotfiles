@@ -8,7 +8,8 @@ return {
     "mason-org/mason-lspconfig.nvim",
     opts = {
       ensure_installed = {
-        "lua_ls"
+        "lua_ls",
+        "docker_language_server"
       }
     },
     dependencies = {"neovim/nvim-lspconfig"}
