@@ -9,7 +9,7 @@ return {
     opts = {
       ensure_installed = {
         "lua_ls",
-        "docker_language_server"
+        "docker_language_server",
       }
     },
     dependencies = {"neovim/nvim-lspconfig"}
