@@ -1,6 +1,9 @@
 if status is-interactive
-    # Commands to run in interactive sessions can go here
-    set -Ux GPG_TTY (tty)
-    alias vim=nvim
-    alias ls="eza --all --long --icons --git"
+and not set -q TMUX
+  exec tmux
 end
+
+set -Ux GPG_TTY (tty)
+
+alias vim=nvim
+alias ls="eza --all --long --icons --git"
