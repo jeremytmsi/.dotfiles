@@ -9,7 +9,7 @@ return {
     })
 
 
-    map("n","gb","<Cmd>Lspsaga show_buf_diagnostics<CR>")
-    map("n","gv","<Cmd>Lspsaga hover_doc<CR>")
+    map("n","sb","<Cmd>Lspsaga show_buf_diagnostics<CR>")
+    map("n","K","<Cmd>Lspsaga hover_doc<CR>")
   end,
 }
