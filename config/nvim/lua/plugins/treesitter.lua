@@ -3,7 +3,9 @@ return {
     "nvim-treesitter/nvim-treesitter",
     opts = {
       ensure_installed = {
-        "lua"
+        "lua",
+        "yaml",
+        "dockerfile"
       }
     },
     config = function(_, opts)
